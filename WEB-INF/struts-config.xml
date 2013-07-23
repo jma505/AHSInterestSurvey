@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN"
+                               "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+ <data-sources>
+  <data-source key="cloverDB">
+   <set-property property="driverClass" value="org.postgresql.Driver"/>
+   <set-property property="user" value="clover"/>
+   <set-property property="password" value="intrst"/>
+   <set-property property="maxCount" value="10"/>
+   <set-property property="minCount" value="2"/>
+   <set-property property="autoCommit" value="true"/>
+   <set-property property="url" value="jdbc:postgresql://localhost/clover"/>
+  </data-source>
+ </data-sources>
+ <form-beans>
+  <form-bean name="loginForm" type="org.apache.struts.validator.DynaValidatorActionForm">
+   <form-property initial="" name="username" size="20" type="java.lang.String"/>
+   <form-property initial="" name="password" size="20" type="java.lang.String"/>
+  </form-bean>
+  <form-bean name="emptyForm" type="org.apache.struts.validator.DynaValidatorActionForm">
+   <form-property initial="" name="dummy" size="1" type="java.lang.String"/>
+  </form-bean>
+  <form-bean name="entryForm1" type="org.jmanderson.ahs.forms.EntryForm1"/>
+  <form-bean name="entryForm2" type="org.jmanderson.ahs.forms.EntryForm2"/>
+  <form-bean name="chooseTeacherForm" type="org.jmanderson.ahs.forms.ChooseTeacherForm"/>
+  <form-bean name="editNameMinority" type="org.jmanderson.ahs.forms.EditNameMinorityForm"/>
+ </form-beans>
+ <global-exceptions/>
+ <global-forwards>
+  <forward name="login" path="/pages/login.jsp"/>
+  <forward name="exception" path="/pages/error.jsp"/>
+  <forward name="logoff" path="/logoff.do"/>
+ </global-forwards>
+ <action-mappings>
+ 
+ <!-- Home Page -->
+ <action path="/homepage" type="org.apache.struts.actions.ForwardAction"
+   name="emptyForm" validate="false" scope="request"
+   parameter="teacher.main.page"/>
+   
+ <!-- Choose a Teacher Page -->
+ <action path="/chooseTeacher" type="org.apache.struts.actions.ForwardAction"
+   parameter="choose.teacher"/>
+   
+  <!-- Login -->
+  <action input="/pages/login.jsp" name="loginForm" path="/processLogin"
+   scope="request" type="org.jmanderson.ahs.actions.LoginAction" validate="true">
+   <forward name="successStudent" path="/addBigEntry.do?newstudent=yes"/>
+   <forward name="success" path="teacher.main.page"/>
+  </action>
+  
+  <!-- Logoff -->
+  <action path="/logoff" name="emptyForm" validate="false"
+   scope="request" type="org.jmanderson.ahs.actions.LogoffAction">
+  </action>
+  
+  <!-- Process a request to Display a Teacher's Class -->
+  <action path="/listByTeacher" type="org.jmanderson.ahs.actions.ListByTeacherAction"
+  	name="chooseTeacherForm" scope="request" validate="true" input="choose.teacher">
+    <forward name="successStudents" path="students.by.teacher"/>
+    <forward name="successInterests" path="interests.by.teacher"/>
+    <forward name="successCounts" path="counts.by.teacher"/>
+  </action>
+  
+  <!-- Process a request to View all the Students in a particular Interest -->
+  <action path="/interestDetails" type="org.jmanderson.ahs.actions.InterestDetailsAction">
+   <forward name="success" path="students.in.interest"/>
+  </action>
+  
+  <!-- Process a request to View a single Student -->
+  <action path="/listStudent" type="org.jmanderson.ahs.actions.ListStudentAction">
+   <forward name="successSmall" path="display.student.small"/>
+   <forward name="successBig" path="display.student.big"/>
+  </action>
+  
+  <!-- Process a request to View All Interests for the school -->
+  <action path="/allCounts" type="org.jmanderson.ahs.actions.AllCountsAction">
+   <forward name="success" path="school.counts"/>
+  </action>
+  
+  <!-- Process an update of a student's name and/or minority flag -->
+  <action path="/updateNameMinority" type="org.jmanderson.ahs.actions.UpdateNameMinorityAction"
+  	name="editNameMinority" scope="session" validate="true" input="edit.name.minority">
+  	<forward name="success" path="/prepareEdit.do"/>
+  	<forward name="cancel" path="/prepareEdit.do"/>
+  </action>
+  
+  <!-- Update the Interests list for a student based on the current CheckBoxes -->
+  <action path="/fixInterests" type="org.jmanderson.ahs.actions.FixInterestsAction">
+    <forward name="success" path="teacher.main.page"/>
+    <forward name="cancel" path="teacher.main.page"/>
+  </action>
+  
+  <!-- Prepare to edit a student's name and/or minority flag -->
+  <action path="/prepareEdit" type="org.jmanderson.ahs.actions.PrepareEditAction">
+   <forward name="success" path="list.students.for.edit"/>
+  </action>
+  
+  <!-- Prepare to edit a single student -->
+  <action path="/prepareStudentEdit" type="org.jmanderson.ahs.actions.PrepareStudentEdit"
+  	name="editNameMinority" scope="session" validate="false">
+  	<forward name="success" path="edit.name.minority"/>
+  </action>
+  
+  <!-- Process a Small entry form -->
+  <action path="/addSmallEntry" type="org.jmanderson.ahs.actions.AddSmallEntryAction"
+  	name="entryForm2" scope="session" validate="false">
+  	<forward name="success" path="student.success.page"/>
+  	<forward name="complete" path="student.success.page"/>
+  	<forward name="cancel" path="teacher.main.page"/>
+  	<forward name="page0" path="student.small.input0.page"/>
+  	<forward name="page1" path="student.small.input1.page"/>
+  	<forward name="page2" path="student.small.input2.page"/>
+  	<forward name="page3" path="student.small.input3.page"/>
+  </action>
+  
+  <!-- Process a Big entry form -->
+    <action	path="/addBigEntry"
+		type="org.jmanderson.ahs.actions.AddBigEntryAction"
+		name="entryForm1"
+		scope="session"
+		validate="false">
+      <forward name="success"	path="student.success.page"/>
+      <forward name="complete"  path="student.success.page"/>
+      <forward name="cancel"	path="teacher.main.page"/>
+      <forward name="page0"		path="student.input0.page"/>
+      <forward name="page1"		path="student.input1.page"/>
+      <forward name="page2"		path="student.input2.page"/>
+      <forward name="page3"		path="student.input3.page"/>
+      <forward name="page4"		path="student.input4.page"/>
+      <forward name="page5"		path="student.input5.page"/>
+      <forward name="page6"		path="student.input6.page"/>
+      <forward name="page7"		path="student.input7.page"/>
+      <forward name="page8"		path="student.input8.page"/>
+      <forward name="page9"		path="student.input9.page"/>
+      <forward name="page10"	path="student.input10.page"/>
+      <forward name="page11"	path="student.input11.page"/>
+      <forward name="page12"	path="student.input12.page"/>
+      <forward name="page13"	path="student.input13.page"/>
+      <forward name="page14"	path="student.input14.page"/>
+      <forward name="page15"	path="student.input15.page"/>
+      <forward name="page16"	path="student.input16.page"/>
+      <forward name="page17"	path="student.input17.page"/>
+      <forward name="page18"	path="student.input18.page"/>
+      <forward name="page19"	path="student.input19.page"/>
+      <forward name="page20"	path="student.input20.page"/>
+      <forward name="page21"	path="student.input21.page"/>
+      <forward name="page22"	path="student.input22.page"/>
+      <forward name="page23"	path="student.input23.page"/>
+      <forward name="page24"	path="student.input24.page"/>
+      <forward name="page25"	path="student.input25.page"/>
+      <forward name="page26"	path="student.input26.page"/>
+      <forward name="page27"	path="student.input27.page"/>
+      <forward name="page28"	path="student.input28.page"/>
+      <forward name="page29"	path="student.input29.page"/>
+      <forward name="page30"	path="student.input30.page"/>
+      <forward name="page31"	path="student.input31.page"/>
+      <forward name="page32"	path="student.input32.page"/>
+      <forward name="page33"	path="student.input33.page"/>
+      <forward name="page34"	path="student.input34.page"/>
+      <forward name="page35"	path="student.input35.page"/>
+      <forward name="page36"	path="student.input36.page"/>
+    </action>
+
+    </action-mappings>
+ <controller/>
+ <message-resources parameter="org.jmanderson.ahs.ApplicationResources"/>
+ <plug-in className="org.apache.struts.tiles.TilesPlugin">
+  <set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml"/>
+  <set-property property="moduleAware" value="true"/>
+ </plug-in>
+ <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+  <set-property property="pathnames" value="/WEB-INF/validator-rules.xml, /WEB-INF/validation.xml"/>
+ </plug-in>
+</struts-config>

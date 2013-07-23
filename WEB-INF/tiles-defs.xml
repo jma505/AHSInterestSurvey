@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN"
+                                   "http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+<tiles-definitions>
+ <definition name="base.page" path="/pages/tilesdefs/basepage.jsp">
+  <put name="title" value="Academy Hill Interest Survey Application"/>
+  <put name="banner" type="page" value="/pages/banner.jsp"/>
+  <put name="menu" type="page" value="${menu}"/>
+  <put name="content" type="page" value="${content}"/>
+ </definition>
+ <definition name="base.nomenu.page" path="/pages/tilesdefs/basepage_nomenu.jsp">
+   <put name="title" value="Academy Hill Interest Survey Application"/>
+   <put name="banner" type="page" value="/pages/banner.jsp"/>
+   <put name="content" type="page" value="${content}"/>
+ </definition>
+ <definition name="blank.page" path="/pages/tilesdefs/blank_page.jsp">
+   <put name="title" value="Academy Interest Survey Application"/>
+   <put name="content" type="page" value="${content}"/>
+ </definition>
+ <definition name="student.input0.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_ss_0.jsp"/>
+ </definition>
+ <definition name="student.input1.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_ss_1.jsp"/>
+ </definition>
+ <definition name="student.input2.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_ss_2.jsp"/>
+ </definition>
+ <definition name="student.input3.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_ss_3.jsp"/>
+ </definition>
+ <definition name="student.input4.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_ss_4.jsp"/>
+ </definition>
+ <definition name="student.input5.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_ss_5.jsp"/>
+ </definition>
+ <definition name="student.input6.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_ss_6.jsp"/>
+ </definition>
+ <definition name="student.input7.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_ss_7.jsp"/>
+ </definition>
+ <definition name="student.input8.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_ss_8.jsp"/>
+ </definition>
+ <definition name="student.input9.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_ss_9.jsp"/>
+ </definition>
+ <definition name="student.input10.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_ss_10.jsp"/>
+ </definition>
+ <definition name="student.input11.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_ss_11.jsp"/>
+ </definition>
+ <definition name="student.input12.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_ss_12.jsp"/>
+ </definition>
+ <definition name="student.input13.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_ss_13.jsp"/>
+ </definition>
+ <definition name="student.input14.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_ss_14.jsp"/>
+ </definition>
+ <definition name="student.input15.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_ss_15.jsp"/>
+ </definition>
+ <definition name="student.input16.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_ss_16.jsp"/>
+ </definition>
+ <definition name="student.input17.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_ss_17.jsp"/>
+ </definition>
+ <definition name="student.input18.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_ss_18.jsp"/>
+ </definition>
+ <definition name="student.input19.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_ss_19.jsp"/>
+ </definition>
+ <definition name="student.input20.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_ss_20.jsp"/>
+ </definition>
+ <definition name="student.input21.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_ss_21.jsp"/>
+ </definition>
+ <definition name="student.input22.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_ss_22.jsp"/>
+ </definition>
+ <definition name="student.input23.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_ss_23.jsp"/>
+ </definition>
+ <definition name="student.input24.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_ss_24.jsp"/>
+ </definition>
+ <definition name="student.input25.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_ss_25.jsp"/>
+ </definition>
+ <definition name="student.input26.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_ss_26.jsp"/>
+ </definition>
+ <definition name="student.input27.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_ss_27.jsp"/>
+ </definition>
+ <definition name="student.input28.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_ss_28.jsp"/>
+ </definition>
+ <definition name="student.input29.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_ss_29.jsp"/>
+ </definition>
+ <definition name="student.input30.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_ss_30.jsp"/>
+ </definition>
+ <definition name="student.input31.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_ss_31.jsp"/>
+ </definition>
+ <definition name="student.input32.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_ss_32.jsp"/>
+ </definition>
+ <definition name="student.input33.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_ss_33.jsp"/>
+ </definition>
+ <definition name="student.input34.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_ss_34.jsp"/>
+ </definition>
+ <definition name="student.input35.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_ss_35.jsp"/>
+ </definition>
+ <definition name="student.input36.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_ss_36.jsp"/>
+ </definition>
+ <definition name="student.small.input0.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_s_0.jsp"/>
+ </definition>
+ <definition name="student.small.input1.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_s_1.jsp"/>
+ </definition>
+ <definition name="student.small.input2.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_s_2.jsp"/>
+ </definition>
+ <definition name="student.small.input3.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/input_s_3.jsp"/>
+ </definition>
+ <definition name="student.success.page" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/student_entry_complete.jsp"/>
+ </definition>
+ <definition name="teacher.main.page" extends="base.page">
+  <put name="menu" type="page" value="/pages/menus/teacher_main_menu.jsp"/>
+  <put name="content" type="page" value="/pages/teachers_main.jsp"/>
+ </definition>
+ <definition name="school.counts" extends="base.page">
+  <put name="menu" type="page" value="/pages/menus/school_counts_menu.jsp"/>
+  <put name="content" type="page" value="/pages/listCountsByInterest.jsp"/>
+ </definition>
+ <definition name="students.in.interest" extends="base.page">
+  <put name="menu" type="page" value="/pages/menus/school_counts_menu.jsp"/>
+  <put name="content" type="page" value="/pages/listStudentsByInterest.jsp"/>
+ </definition>
+ <definition name="display.student.big" extends="blank.page">
+  <put name="title" value="Student Information"/>
+  <put name="content" type="page" value="/pages/listStudentB.jsp"/>
+ </definition>
+ <definition name="display.student.small" extends="blank.page">
+  <put name="title" value="Student Information"/>
+  <put name="content" type="page" value="/pages/listStudentS.jsp"/>
+ </definition>
+ <definition name="choose.teacher" extends="base.page">
+  <put name="menu" type="page" value="/pages/menus/choose_teacher_menu.jsp"/>
+  <put name="content" type="page" value="/pages/chooseTeacher.jsp"/>
+ </definition>
+ <definition name="students.by.teacher" extends="base.page">
+  <put name="menu" type="page" value="/pages/menus/teacher_class_menu.jsp"/>
+  <put name="content" type="page" value="/pages/listStudentsByTeacher.jsp"/>
+ </definition>
+ <definition name="interests.by.teacher" extends="students.by.teacher">
+  <put name="content" type="page" value="/pages/listInterestsByTeacher.jsp"/>
+ </definition>
+ <definition name="counts.by.teacher" extends="students.by.teacher">
+  <put name="content" type="page" value="/pages/listCountsByTeacher.jsp"/>
+ </definition>
+ <definition name="edit.name.minority" extends="base.nomenu.page">
+  <put name="content" type="page" value="/pages/editNameMinority.jsp"/>
+ </definition>
+ <definition name="list.students.for.edit" extends="base.page">
+  <put name="menu" type="page" value="/pages/menus/class_edit_menu.jsp"/>
+  <put name="content" type="page" value="/pages/listStudentsForEdit.jsp"/>
+ </definition>
+ 
+  
+</tiles-definitions>

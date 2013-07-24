@@ -1035,6 +1035,12 @@ public final class EntryForm1 extends ActionForm {
 
 	private boolean hi125;
 
+	private boolean hi126;
+
+	private boolean hi127;
+
+	private boolean hi128;
+
 	/*
 	 * Page 14
 	 */
@@ -1074,6 +1080,14 @@ public final class EntryForm1 extends ActionForm {
 	private boolean fl110;
 
 	private boolean fl111;
+
+	private boolean fl112;
+
+	private boolean fl113;
+
+	private boolean fl114;
+
+	private boolean fl115;
 
 	/*
 	 * Page 16
@@ -1130,6 +1144,18 @@ public final class EntryForm1 extends ActionForm {
 
 	public boolean getHi125() {
 		return hi125;
+	}
+
+	public boolean getHi126() {
+		return hi126;
+	}
+
+	public boolean getHi127() {
+		return hi127;
+	}
+
+	public boolean getHi128() {
+		return hi128;
 	}
 
 	public boolean getHu100() {
@@ -1200,6 +1226,22 @@ public final class EntryForm1 extends ActionForm {
 		return fl111;
 	}
 
+	public boolean getFl112() {
+		return fl112;
+	}
+
+	public boolean getFl113() {
+		return fl113;
+	}
+
+	public boolean getFl114() {
+		return fl114;
+	}
+
+	public boolean getFl115() {
+		return fl115;
+	}
+
 	public boolean getLa100() {
 		return la100;
 	}
@@ -1262,6 +1304,18 @@ public final class EntryForm1 extends ActionForm {
 
 	public void setHi125(boolean b) {
 		hi125 = b;
+	}
+
+	public void setHi126(boolean b) {
+		hi126 = b;
+	}
+
+	public void setHi127(boolean b) {
+		hi127 = b;
+	}
+
+	public void setHi128(boolean b) {
+		hi128 = b;
 	}
 
 	public void setHu100(boolean b) {
@@ -1330,6 +1384,22 @@ public final class EntryForm1 extends ActionForm {
 
 	public void setFl111(boolean b) {
 		fl111 = b;
+	}
+
+	public void setFl112(boolean b) {
+		fl112 = b;
+	}
+
+	public void setFl113(boolean b) {
+		fl113 = b;
+	}
+
+	public void setFl114(boolean b) {
+		fl114 = b;
+	}
+
+	public void setFl115(boolean b) {
+		fl115 = b;
 	}
 
 	public void setLa100(boolean b) {
@@ -1979,6 +2049,10 @@ public final class EntryForm1 extends ActionForm {
 
 	private boolean na104;
 
+	private boolean na105;
+
+	private boolean na106;
+
 	/*
 	 * Page 24
 	 */
@@ -2092,6 +2166,14 @@ public final class EntryForm1 extends ActionForm {
 
 	public boolean getNa104() {
 		return na104;
+	}
+
+	public boolean getNa105() {
+		return na105;
+	}
+
+	public boolean getNa106() {
+		return na106;
 	}
 
 	public boolean getPa100() {
@@ -2234,6 +2316,14 @@ public final class EntryForm1 extends ActionForm {
 		na104 = b;
 	}
 
+	public void setNa105(boolean b) {
+		na105 = b;
+	}
+
+	public void setNa106(boolean b) {
+		na106 = b;
+	}
+
 	public void setPa100(boolean b) {
 		pa100 = b;
 	}
@@ -2318,6 +2408,10 @@ public final class EntryForm1 extends ActionForm {
 	private boolean re105;
 
 	private boolean re106;
+
+	private boolean re107;
+
+	private boolean re108;
 
 	/*
 	 * Page 28
@@ -2415,6 +2509,14 @@ public final class EntryForm1 extends ActionForm {
 
 	public boolean getRe106() {
 		return re106;
+	}
+
+	public boolean getRe107() {
+		return re107;
+	}
+
+	public boolean getRe108() {
+		return re108;
 	}
 
 	public boolean getRl100() {
@@ -2571,6 +2673,14 @@ public final class EntryForm1 extends ActionForm {
 
 	public void setRe106(boolean b) {
 		re106 = b;
+	}
+
+	public void setRe107(boolean b) {
+		re107 = b;
+	}
+
+	public void setRe108(boolean b) {
+		re108 = b;
 	}
 
 	public void setRl100(boolean b) {
@@ -3570,6 +3680,9 @@ public final class EntryForm1 extends ActionForm {
 			hi123 = false;
 			hi124 = false;
 			hi125 = false;
+			hi126 = false;
+			hi127 = false;
+			hi128 = false;
 			break;
 		case 13:
 			hu100 = false;
@@ -3591,6 +3704,10 @@ public final class EntryForm1 extends ActionForm {
 			fl109 = false;
 			fl110 = false;
 			fl111 = false;
+			fl112 = false;
+			fl113 = false;
+			fl114 = false;
+			fl115 = false;
 			break;
 		case 15:
 			la100 = false;
@@ -3687,6 +3804,8 @@ public final class EntryForm1 extends ActionForm {
 			na102 = false;
 			na103 = false;
 			na104 = false;
+			na105 = false;
+			na106 = false;
 			break;
 		case 23:
 			pa100 = false;
@@ -3719,6 +3838,8 @@ public final class EntryForm1 extends ActionForm {
 			re104 = false;
 			re105 = false;
 			re106 = false;
+			re107 = false;
+			re108 = false;
 			break;
 		case 27:
 			rl100 = false;

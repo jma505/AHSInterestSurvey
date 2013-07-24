@@ -22,7 +22,7 @@ public interface CategoryCounts1 {
 	static final int GAMES = 6;
 	static final int HISTORY = 29;
 	static final int HUMOR = 5;
-	static final int FOREIGNLANGUAGE = 17;
+	static final int FOREIGNLANGUAGE = 16;
 	static final int LAW = 5;
 	static final int SCHOOLSUBJECTS = 11;
 	static final int MEDIA = 41;

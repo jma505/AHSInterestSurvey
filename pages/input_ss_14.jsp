@@ -25,6 +25,8 @@
 <td align="left"><br><em><bean:message key="check.all"/></em></td>
 </tr><tr>
 <td>
+<br><html:checkbox property="fl115"/>I am interested in Foreign Languages.<br>
+<input type="hidden" name="fl115" value="false">
 <br>I can speak and understand over 100 words in a language other than English.<br>
 That language is:<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<html:checkbox property="fl100"/>Chinese<br>
@@ -47,9 +49,14 @@ That language is:<br><br>
 <input type="hidden" name="fl107" value="false">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<html:checkbox property="fl111"/>Hebrew<br>
 <input type="hidden" name="fl111" value="false">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<html:checkbox property="fl112"/>Lebanese<br>
+<input type="hidden" name="fl112 value="false">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<html:checkbox property="fl113"/>Hindi<br>
+<input type="hidden" name="fl113" value="false">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<html:checkbox property="fl108"/>Other language not listed here<br>
 <input type="hidden" name="fl108" value="false">
-<br>
+<br><html:checkbox property="fl114"/>I can speak another language as well as I can speak English.<br>
+<input type="hidden" name="fl114" value="false">
 <html:checkbox property="fl109"/>I would like to learn another language.<br>
 <input type="hidden" name="fl109" value="false">
 </td>

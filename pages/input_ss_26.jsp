@@ -39,6 +39,10 @@
 <input type="hidden" name="re105" value="false">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<html:checkbox property="re106"/>books<br>
 <input type="hidden" name="re106" value="false">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<html:checkbox property="re107"/>newspapers<br>
+<input type="hidden" name="re107" value="false">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<html:checkbox property="re108"/>on-line<br>
+<input type="hidden" name="re108" value="false">
 </td>
 </tr>
 </table>

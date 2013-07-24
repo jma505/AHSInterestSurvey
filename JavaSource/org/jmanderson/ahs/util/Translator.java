@@ -113,7 +113,7 @@ public final class Translator
 				case 0: return "Likes to draw";
 				case 1: return "Likes to paint";
 				case 2: return "Likes to make sculptures";
-				case 3: return "Likes to take photographs and see how they come out";
+				case 3: return "Likes to take photographs";
 				case 4: return "Likes making prints";
 			}
 		}
@@ -130,7 +130,7 @@ public final class Translator
 		{
 			switch (item) {
 				case 0: return "Likes to play games";
-				case 1: return "Likes to play board games like Candyland, Monopoly, or Clue";
+				case 1: return "Likes to play board games like Candyland, Monopoly, Sorry, or Clue";
 				case 2: return "Likes to play pretend";
 				case 3: return "Likes to play outside";
 				case 4: return "Likes to play computer games";
@@ -154,7 +154,7 @@ public final class Translator
 				case 11: return "Would like to meet Helen Keller";
 				case 12: return "Would like to meet Florence Nightingale";
 				case 13: return "Would like to meet Pocahontas";
-				case 14: return "Would like to meet Someone else not named on the survey";
+				case 14: return "Would like to meet Someone else from the past";
 				case 15: return "Would like to go back in time to Old castles";
 				case 16: return "Would like to go back in time to Dinosaurs";
 				case 17: return "Would like to go back in time to The American Colonies";
@@ -166,6 +166,9 @@ public final class Translator
 				case 23: return "Would like to meet the inventor of A musical instrument";
 				case 24: return "Would like to meet the inventor of The car";
 				case 25: return "Would like to meet the inventor of The airplane";
+				case 26: return "Would like to go back in time to another place in the past";
+				case 27: return "Would like to go back in time to Ancient China";
+				case 28: return "Would like to go back in time to Africa before the slave trade";
 			}
 		}
 		if (array.equals("hu1"))
@@ -193,6 +196,10 @@ public final class Translator
 				case 9: return "Would like to learn another language";
 				case 10: return "Speaks Italian";
 				case 11: return "Speaks Hebrew";
+				case 12: return "Speaks Lebanese";
+				case 13: return "Speaks Hindi";
+				case 14: return "Speaks another language as well as English";
+				case 15: return "Is interested in foreign languages";
 			}
 		}
 		if (array.equals("la1"))
@@ -202,7 +209,7 @@ public final class Translator
 				case 1: return "Would like to be a lawyer";
 				case 2: return "Would like to be a judge";
 				case 3: return "Tries to always obey the rules";
-				case 4: return "Tries to get others to obey the rules";
+				case 4: return "Obeys rules and tries to get others to obey rules";
 			}
 		}
 		if (array.equals("ss1"))
@@ -259,12 +266,12 @@ public final class Translator
 				case 32: return "Likes Movies: Classic";
 				case 33: return "Likes Movies: Childrens";
 				case 34: return "Likes Movies: Musicals";
-				case 35: return "Likes listening to stories on tape";
-				case 36: return "Likes listening to stories on CD";
+				case 35: return "Likes listening to stories on MP3 Player, iPod, etc";
+				case 36: return "Likes listening to music on MP3 Player, iPod, etc";
 				case 37: return "Likes Radio: Country";
 				case 38: return "Likes Radio: Gospel";
-				case 39: return "Likes listening to music on tape";
-				case 40: return "Likes listening to music on CD";
+				case 39: return "Likes listening to stories on a computer";
+				case 40: return "Likes listening to music on a computer";
 			}
 		}
 		if (array.equals("md1"))
@@ -303,6 +310,8 @@ public final class Translator
 				case 2: return "Likes to take walks in the woods";
 				case 3: return "Likes to take care of the environment";
 				case 4: return "Has helped take care of the environment";
+				case 5: return "Is interested in solar energy";
+				case 6: return "Is interested in wind energy";
 			}
 		}
 		if (array.equals("pa1"))
@@ -347,6 +356,8 @@ public final class Translator
 				case 4: return "Likes to read magazines";
 				case 5: return "Likes to read short stories";
 				case 6: return "Likes to read books";
+				case 7: return "Likes to read the newspaper";
+				case 8: return "Likes to read on-line";
 			}
 		}
 		if (array.equals("rl1"))
@@ -380,7 +391,7 @@ public final class Translator
 				case 14: return "Interested in Light";
 				case 15: return "Interested in Motion";
 				case 16: return "Interested in Mechanics";
-				case 17: return "Interested in Goopy Things (like Gak or Silly Putty)";
+				case 17: return "Interested in Goopy Things (like Gak, Flubber, or Silly Putty)";
 				case 18: return "Interested in Rockets";
 				case 19: return "Interested in Rocks";
 				case 20: return "Interested in Volcanoes";
@@ -396,7 +407,7 @@ public final class Translator
 			switch (item) {
 				case 0: return "Thinks it is important to take care of other people";
 				case 1: return "Would like to help others";
-				case 2: return "Has helped with projects that help other people";
+				case 2: return "Helps with projects that help other people";
 				case 3: return "Concerned about the homeless";
 				case 4: return "Concerned about old people";
 				case 5: return "Concerned about poor people";
@@ -425,7 +436,7 @@ public final class Translator
 				case 14: return "Scooter";
 				case 15: return "Rollerblades";
 				case 16: return "Sidewalk chalk";
-				case 17: return "Silly Putty, Gooze";
+				case 17: return "Silly Putty, Gooze, or Flubber";
 			}
 		}
 		if (array.equals("te1"))
@@ -446,7 +457,7 @@ public final class Translator
 				case 2: return "Likes to find out about the foods in other countries";
 				case 3: return "Likes to find out about the clothing in other countries";
 				case 4: return "Likes to find out about the music or art of other countries";
-				case 5: return "Has been to more than two states";
+				case 5: return "Has been to more than three states";
 				case 6: return "Has been to more than one country";
 			}
 		}
@@ -596,7 +607,7 @@ public final class Translator
 		if (array.equals("fl2"))
 		{
 			switch (item) {
-				case 0: return "Can speak a language other than English";
+				case 0: return "Can speak over 100 words in a language other than English";
 				case 1: return "Would like to learn another language";
 			}
 		}

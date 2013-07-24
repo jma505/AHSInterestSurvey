@@ -61,7 +61,7 @@
 <input type="hidden" name="to115" value="false">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<html:checkbox property="to116"/>sidewalk chalk<br>
 <input type="hidden" name="to116" value="false">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<html:checkbox property="to117"/>silly putty, gooze<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<html:checkbox property="to117"/>silly putty, gooze, or Flubber<br>
 <input type="hidden" name="to117" value="false">
 </td>
 </tr>

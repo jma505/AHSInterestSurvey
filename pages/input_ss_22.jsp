@@ -35,6 +35,10 @@
 <input type="hidden" name="na103" value="false">
 <html:checkbox property="na104"/>I have helped take care of the environment.<br>
 <input type="hidden" name="na104" value="false">
+<html:checkbox property="na105"/>I am interested in solar energy.<br>
+<input type="hidden" name="na105" value="false">
+<html:checkbox property="na106"/>I am interested in wind energy.<br>
+<input type="hidden" name="na106" value="false">
 </td>
 </tr>
 </table>

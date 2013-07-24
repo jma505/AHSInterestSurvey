@@ -31,9 +31,9 @@
 <input type="hidden" name="at100" value="false">
 <html:checkbox property="at101"/>I play a sport.<br>
 <input type="hidden" name="at101" value="false">
-<html:checkbox property="at108"/>I like running, jumping, etc.<br>
+<html:checkbox property="at108"/>I like running, jumping, skipping, hopping<br>
 <input type="hidden" name="at108" value="false">
-<html:checkbox property="at109"/>I like rollerblading, ice skating, etc.<br>
+<html:checkbox property="at109"/>I like roller blading, ice skating, roller skating<br>
 <input type="hidden" name="at109" value="false">
 </td>
 <td>

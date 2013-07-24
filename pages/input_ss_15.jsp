@@ -33,7 +33,7 @@
 <input type="hidden" name="la102" value="false">
 <html:checkbox property="la103"/>I try to always obey the rules.<br>
 <input type="hidden" name="la103" value="false">
-<html:checkbox property="la104"/>I try to get other people to obey the rules.<br>
+<html:checkbox property="la104"/>I obey the rules and I try to get other people to obey the rules.<br>
 <input type="hidden" name="la104" value="false">
 </td>
 </tr>

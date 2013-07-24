@@ -27,7 +27,7 @@
 <td><br>
 <html:checkbox property="ga100"/>I like to play games.<br>
 <input type="hidden" name="ga100" value="false">
-<html:checkbox property="ga101"/>I like to play board games like Candyland, Monopoly, or Clue.<br>
+<html:checkbox property="ga101"/>I like to play board games like Candyland, Monopoly, Sorry, or Clue.<br>
 <input type="hidden" name="ga101" value="false">
 <html:checkbox property="ga102"/>I like to play pretend.<br>
 <input type="hidden" name="ga102" value="false">

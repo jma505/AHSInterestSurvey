@@ -29,7 +29,7 @@
 <input type="hidden" name="sa100" value="false">
 <html:checkbox property="sa101"/>I would like to help others.<br>
 <input type="hidden" name="sa101" value="false">
-<html:checkbox property="sa102"/>I have helped with projects that help other people.<br>
+<html:checkbox property="sa102"/>I help with projects that help other people.<br>
 <input type="hidden" name="sa102" value="false">
 <br>I am concerned about:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<html:checkbox property="sa103"/>the homeless<br>

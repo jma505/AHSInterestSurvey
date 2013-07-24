@@ -58,7 +58,7 @@
 <html:checkbox property="hi203"/>I like dinosaurs<br>
 <html:checkbox property="sc205"/>I like inventing things<br>
 <html:checkbox property="hu200"/>I like jokes or funny stories a lot<br>
-<html:checkbox property="fl200"/>I can speak a language other than English<br>
+<html:checkbox property="fl200"/>I can speak >100 words in a language other than English<br>
 <html:checkbox property="fl201"/>I would like to learn another language<br>
 <html:checkbox property="la200"/>I think rules are very important<br>
 <html:checkbox property="la201"/>I try to get other people to obey the rules<br>

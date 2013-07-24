@@ -30,7 +30,7 @@
 <input type="hidden" name="fa101" value="false">
 <html:checkbox property="fa102"/>I like to make sculptures.<br>
 <input type="hidden" name="fa102" value="false">
-<html:checkbox property="fa103"/>I like to take pictures with a camera and see how they come out.<br>
+<html:checkbox property="fa103"/>I like to take pictures with a camera or cell phone.<br>
 <input type="hidden" name="fa103" value="false">
 <html:checkbox property="fa104"/>I like making prints.<br>
 <input type="hidden" name="fa104" value="false">

@@ -24,7 +24,7 @@
 <tr><br>
 <td>
 </td></tr><tr>
-<td align="left"><br><em>I would like to meet:</em><br>
+<td align="left"><br><em>I wish I could have met:</em><br>
 <i>(Check NONE, ONE, or TWO people that you wish you could have met)</i></td>
 </tr><tr>
 <td><br>
@@ -54,7 +54,7 @@
 <input type="hidden" name="hi112" value="false">
 <html:checkbox property="hi113"/>Pocahontas<br>
 <input type="hidden" name="hi113" value="false">
-<html:checkbox property="hi114"/>Someone else not named here<br>
+<html:checkbox property="hi114"/>Someone else from the past not named here<br>
 <input type="hidden" name="hi114" value="false">
 </td>
 </tr>
@@ -74,6 +74,12 @@
 <input type="hidden" name="hi118" value="false">
 &nbsp;&nbsp;&nbsp;<html:checkbox property="hi119"/>the American Civil War<br>
 <input type="hidden" name="hi119" value="false">
+&nbsp;&nbsp;&nbsp;<html:checkbox property="hi126"/>Ancient China<br>
+<input type="hidden" name="hi126" value="false">
+&nbsp;&nbsp;&nbsp;<html:checkbox property="hi127"/>Africa before the slave trade<br>
+<input type="hidden" name="hi127" value="false">
+&nbsp;&nbsp;&nbsp;<html:checkbox property="hi128"/>another place in the past<br>
+<input type="hidden" name="hi128" value="false">
 <br>I would like to go back in time to meet the inventor of:<br>
 &nbsp;&nbsp;&nbsp;<html:checkbox property="hi120"/>the light bulb<br>
 <input type="hidden" name="hi120" value="false">

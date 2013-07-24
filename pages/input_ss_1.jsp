@@ -24,7 +24,7 @@
 <table align="center" border="0" cellpadding="0" cellspacing="0" width="640">
 <tr>
 <td align="left"><br><em><bean:message key="check.all"/></em></td>
-<td colspan="2" align="left"><br><em>Select ONE Favorite Animal:</em></td>
+<td colspan="2" align="left"><br><em>Pick ONE Favorite Animal:</em></td>
 </tr><tr>
 <td><br>
 <html:checkbox property="an100"/>I like most animals.<br>

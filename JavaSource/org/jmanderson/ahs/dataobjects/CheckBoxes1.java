@@ -279,6 +279,9 @@ public class CheckBoxes1 extends CheckBoxes implements Serializable, CategoryCou
 		f.setHi123(hi1[23]);
 		f.setHi124(hi1[24]);
 		f.setHi125(hi1[25]);
+		f.setHi126(hi1[26]);
+		f.setHi127(hi1[27]);
+		f.setHi128(hi1[28]);
 
 		f.setHu100(hu1[0]);
 		f.setHu101(hu1[1]);
@@ -298,6 +301,10 @@ public class CheckBoxes1 extends CheckBoxes implements Serializable, CategoryCou
 		f.setFl109(fl1[9]);
 		f.setFl110(fl1[10]);
 		f.setFl111(fl1[11]);
+		f.setFl112(fl1[12]);
+		f.setFl113(fl1[13]);
+		f.setFl114(fl1[14]);
+		f.setFl115(fl1[15]);
 
 		f.setLa100(la1[0]);
 		f.setLa101(la1[1]);
@@ -384,6 +391,8 @@ public class CheckBoxes1 extends CheckBoxes implements Serializable, CategoryCou
 		f.setNa102(na1[2]);
 		f.setNa103(na1[3]);
 		f.setNa104(na1[4]);
+		f.setNa105(na1[5]);
+		f.setNa106(na1[6]);
 
 		f.setPa100(pa1[0]);
 		f.setPa101(pa1[1]);
@@ -412,6 +421,8 @@ public class CheckBoxes1 extends CheckBoxes implements Serializable, CategoryCou
 		f.setRe104(re1[4]);
 		f.setRe105(re1[5]);
 		f.setRe106(re1[6]);
+		f.setRe107(re1[7]);
+		f.setRe108(re1[8]);
 
 		f.setRl100(rl1[0]);
 		f.setRl101(rl1[1]);
@@ -734,6 +745,12 @@ public class CheckBoxes1 extends CheckBoxes implements Serializable, CategoryCou
 			hi1[24] = true;
 		if (f.getHi125())
 			hi1[25] = true;
+		if (f.getHi126())
+			hi1[26] = true;
+		if (f.getHi127())
+			hi1[27] = true;
+		if (f.getHi128())
+			hi1[28] = true;
 
 		if (f.getHu100())
 			hu1[0] = true;
@@ -770,6 +787,14 @@ public class CheckBoxes1 extends CheckBoxes implements Serializable, CategoryCou
 			fl1[10] = true;
 		if (f.getFl111())
 			fl1[11] = true;
+		if (f.getFl112())
+			fl1[12] = true;
+		if (f.getFl113())
+			fl1[13] = true;
+		if (f.getFl114())
+			fl1[14] = true;
+		if (f.getFl115())
+			fl1[15] = true;
 
 		if (f.getLa100())
 			la1[0] = true;
@@ -936,6 +961,10 @@ public class CheckBoxes1 extends CheckBoxes implements Serializable, CategoryCou
 			na1[3] = true;
 		if (f.getNa104())
 			na1[4] = true;
+		if (f.getNa105())
+			na1[5] = true;
+		if (f.getNa106())
+			na1[6] = true;
 
 		if (f.getPa100())
 			pa1[0] = true;
@@ -988,6 +1017,10 @@ public class CheckBoxes1 extends CheckBoxes implements Serializable, CategoryCou
 			re1[5] = true;
 		if (f.getRe106())
 			re1[6] = true;
+		if (f.getRe107())
+			re1[7] = true;
+		if (f.getRe108())
+			re1[8] = true;
 
 		if (f.getRl100())
 			rl1[0] = true;

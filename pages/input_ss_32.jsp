@@ -35,7 +35,7 @@
 <input type="hidden" name="tr103" value="false">
 <html:checkbox property="tr104"/>I like to find out about the music or art of other countries.<br>
 <input type="hidden" name="tr104" value="false">
-<html:checkbox property="tr105"/>I have been to more than two states.<br>
+<html:checkbox property="tr105"/>I have been to more than three states.<br>
 <input type="hidden" name="tr105" value="false">
 <html:checkbox property="tr106"/>I have been to more than one country.<br>
 <input type="hidden" name="tr106" value="false">

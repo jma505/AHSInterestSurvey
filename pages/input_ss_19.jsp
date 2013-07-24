@@ -51,13 +51,13 @@
 </td></tr><tr>
 <td colspan="3"><br><hr><center><b><big>MEDIA - LISTENING</big></b><br><br></center>
 <em><bean:message key="check.all"/></em><br><br>
-<html:checkbox property="me135"/>I like listening to tapes to hear stories<br>
+<html:checkbox property="me135"/>I like listening to stories on an MP3 player, iPod, or similar device.<br>
 <input type="hidden" name="me135" value="false">
-<html:checkbox property="me136"/>I like listening to CDs to hear stories<br>
+<html:checkbox property="me136"/>I like listening to music on an MP3 player, iPod, or similar device.<br>
 <input type="hidden" name="me136" value="false">
-<html:checkbox property="me139"/>I like listening to tapes to hear music<br>
+<html:checkbox property="me139"/>I like listening to stories on a computer.<br>
 <input type="hidden" name="me139" value="false">
-<html:checkbox property="me140"/>I like listening to CDs to hear music<br>
+<html:checkbox property="me140"/>I like listening to music on a computer.<br>
 <input type="hidden" name="me140" value="false">
 </td></tr>
 </table>

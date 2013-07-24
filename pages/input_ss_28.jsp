@@ -61,7 +61,7 @@
 <input type="hidden" name="sc115" value="false">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<html:checkbox property="sc116"/>mechanics<br>
 <input type="hidden" name="sc116" value="false">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<html:checkbox property="sc117"/>goopy things (like Gak or Silly Putty)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<html:checkbox property="sc117"/>goopy things (like Gak, Flubber, or Silly Putty)<br>
 <input type="hidden" name="sc117" value="false">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<html:checkbox property="sc118"/>rockets<br>
 <input type="hidden" name="sc108" value="false">

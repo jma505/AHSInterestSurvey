@@ -755,6 +755,15 @@ public class FormToInterests {
 		if (bef.getHi125()) {
 			tally.tally("hi125");
 		}
+		if (bef.getHi126()) {
+			tally.tally("hi126");
+		}
+		if (bef.getHi127()) {
+			tally.tally("hi127");
+		}
+		if (bef.getHi128()) {
+			tally.tally("hi128");
+		}
 		if (bef.getHu100()) {
 			tally.tally("hu100");
 		}
@@ -805,6 +814,18 @@ public class FormToInterests {
 		}
 		if (bef.getFl111()) {
 			tally.tally("fl111");
+		}
+		if (bef.getFl112()) {
+			tally.tally("fl112");
+		}
+		if (bef.getFl113()) {
+			tally.tally("fl113");
+		}
+		if (bef.getFl114()) {
+			tally.tally("fl114");
+		}
+		if (bef.getFl115()) {
+			tally.tally("fl115");
 		}
 		if (bef.getLa100()) {
 			tally.tally("la100");
@@ -1050,6 +1071,12 @@ public class FormToInterests {
 		if (bef.getNa104()) {
 			tally.tally("na104");
 		}
+		if (bef.getNa105()) {
+			tally.tally("na105");
+		}
+		if (bef.getNa106()) {
+			tally.tally("na106");
+		}
 		if (bef.getPa100()) {
 			tally.tally("pa100");
 		}
@@ -1123,6 +1150,12 @@ public class FormToInterests {
 		}
 		if (bef.getRe106()) {
 			tally.tally("re106");
+		}
+		if (bef.getRe107()) {
+			tally.tally("re107");
+		}
+		if (bef.getRe108()) {
+			tally.tally("re108");
 		}
 		if (bef.getRl100()) {
 			tally.tally("rl100");

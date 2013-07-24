@@ -97,7 +97,7 @@ You are logged in as: <em>
 
 <br><br>
 <form name=tickform>
-<textarea name=tickfield rows=4 cols=70 style="background-color: rgb(40,60,120); color: rgb(255,255,255); cursor: default; font-family: Arial; font-size: 16px;" wrap=virtual></textarea>
+<textarea name=tickfield rows=4 cols=70 style="background-color: rgb(0,85,102); color: rgb(255,255,255); cursor: default; font-family: Arial; font-size: 16px;" wrap=virtual></textarea>
 </form>
 </center>
 

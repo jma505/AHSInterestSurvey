@@ -20,7 +20,7 @@
 <td valign="top" width="100">
 <tiles:insert attribute="menu"/>
 </td>
-<td bgcolor="white">
+<td>
 <tiles:insert attribute="content"/>
 </td>
 </tr>

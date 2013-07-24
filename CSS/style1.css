@@ -17,58 +17,58 @@ div.boxcolor {
   border-width: thin;
   width: 80%;
   padding: 0.5em;
-  background: #FFFFCC;
+  background: #EEEEEE;
 }
 div.boxcolor40 {
   border: solid;
   border-width: thin;
   width: 40%;
   padding: 0.5em;
-  background: #FFFFCC;
+  background: #EEEEEE;
 }
 div.boxcolor80 {
   border: solid;
   border-width: thin;
   width: 80%;
   padding: 0.5em;
-  background: #FFFFCC;
+  background: #EEEEEE;
 }
 div.boxcolor90 {
   border: solid;
   border-width: thin;
   width: 90%;
   padding: 0.5em;
-  background: #FFFFCC;
+  background: #EEEEEE;
 }
 h1 {
-  color: #330066;
+  color: #42474c;
   margin-top: 1em;
   margin-bottom: 1em;
   font-size: 200%;
 }
 h3 {
-  color: #330066;
+  color: #42474c;
   margin-top: 1em;
   margin-bottom: 1em;
   font-size: 125%;
 }
 h4 {
-  color: #330066;
+  color: #42474c;
   margin-top: 1em;
   margin-bottom: 1em;
   font-size: 90%;
 }
 A:link {
-  color: #330066;
+  color: #42474c;
 }
 A:visited {
-  color: #330066;
+  color: #42474c;
 }
 A:hover {
-  color: #c80000;
+  color: #660033;
 }
 A:active {
-  color: #cf0000;
+  color: #660033;
 }
 em {
   font-style: italic;

@@ -10,7 +10,7 @@
    <set-property property="maxCount" value="10"/>
    <set-property property="minCount" value="2"/>
    <set-property property="autoCommit" value="true"/>
-   <set-property property="url" value="jdbc:postgresql://localhost/clover"/>
+   <set-property property="url" value="jdbc:postgresql://localhost/ahsinterest"/>
   </data-source>
  </data-sources>
  <form-beans>

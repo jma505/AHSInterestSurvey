@@ -22,10 +22,6 @@ public final class User implements Serializable {
 
 	private boolean is_validated;
 
-	// TODO Delete user_teacher at some point in the future.
-	// not used as of 10/9/04
-	//private int user_teacher;
-
 	private boolean isStudent;
 
 	public User() {
@@ -56,10 +52,6 @@ public final class User implements Serializable {
 	public int getSecurityLevel() {
 		return user_security_level;
 	}
-
-//	public int getUserTeacher() {
-//		return user_teacher;
-//	}
 
 	public String getSecurity() {
 		if (isSuperAdmin())
@@ -125,7 +117,6 @@ public final class User implements Serializable {
 
 		user_security_level = Integer.parseInt(props.getProperty(
 				"security_level", "0"));
-//		user_teacher = Integer.parseInt(props.getProperty("user_teacher", "0"));
 		password = "";
 
 		return true;

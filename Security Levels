@@ -1,0 +1,13 @@
+Security Levels:
+
+0 = unknown
+
+1 = view by classes
+
+2 = view by classes and edit names
+
+3 = add students in the lower grades
+
+4 = view by classes or by entire school
+
+5 = view by classes or by entire school and add students in the lower grades

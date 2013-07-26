@@ -16,11 +16,9 @@ tl = new textlist(
   "Depending on your Security Rights, you may not see all of the menu options described here.",
   "Menu Options appear on the left side of most pages.  Resting the mouse cursor (hovering) on an active option will cause a description of that option to appear.",
   "\"Home Page\" brings you back to this page.",
-  <%--
-  "\"Add New Entry\" brings you to a new Interest-A-Lyzer form.  The form is different depending on the student's grade.  (If you are a Teacher, you can only enter your own students' information.  If you are a G/T Administrator, you can enter students for any teacher.)",
-  --%>
-  "\"Choose a Teacher's Class\" allows you to select one teacher's students to view, sorted either by Student or by Interest.",
-  "Select \"View All Interests\" to see counts and a histogram for all Interests in the entire school.",
+  "\"Choose a Teacher's Class to View\" allows you to select one teacher's students to view, sorted either by Student or by Interest.",
+  "Select \"View Interests for the Entire School\" to see counts and a histogram for all Interests in the entire school.",
+  "\"Enter Data for a Student in the lower grades\" brings you to a new for use when transcribing from the paper form into this application.",
   "\"Logoff\" ends this application.",
   "On the Interests displays, \"Threshold for Interests\" is the cutoff for displaying Interest categories.  The percentages relate to the extent of a student's interest in that category.  For example, the default of \"40%\" displays only those students who obtained at least 40% of the possible points for that category.",
   "A new option on the Interests displays allows you to restrict the output to only Minorities or only non-Minorities.  The default is to display all students regardless of their race.",
@@ -56,45 +54,6 @@ function textticker() {
 </em></logic:present>
 <br>
 Your security rights are: <em><jsp:getProperty name="user" property="security"/></em><br>
-<%--
-<% org.jmanderson.ahs.dataobjects.User user =
-	(org.jmanderson.ahs.dataobjects.User) session.getAttribute("user");
-   if (user.isTeacherView()) { %>
-You are logged in as: <em>
-<% java.util.ArrayList list = 
-	(java.util.ArrayList) application.getAttribute("teacherList");
-   org.jmanderson.ahs.TeacherListBean tlb;
-   int ut = user.getUserTeacher();
-   for (int i = 0; i < list.size(); i++) {
-     tlb = (org.jmanderson.ahs.TeacherListBean) list.get(i);
-     if (tlb.getValue() == ut)
-       out.print(tlb.getLabel());
-   }
-%>
-     </em><br>
-<% } %>
-<% if (user.isDataEntry()) {
-     if (user.isTeacherEdit()) { %>
-<html:link href="addMyEntry.do" target="_self"><h4>Add new Entry</h4>
-</html:link>
-<% } else { %>
-<html:link href="addSmallEntry.do?newstudent=newstudent" target="_self"><h4>Add new Entry (grades 1-2)</h4>
-</html:link>
-<html:link href="addBigEntry.do?newstudent=newstudent" target="_self"><h4>Add new Entry (grades 3-5)</h4>
-</html:link>
-<% } }
-   if (user.isTeacherView()) { %>
-<html:link href="chooseDisplay.jsp" target="_self"><h4>Display My Students</h4>
-</html:link>
-<% }
-   if (user.isViewAll()) { %>
-<html:link href="chooseTeacher.jsp" target="_self"><h4>Display a Teacher's Students</h4>
-</html:link>
-<html:link href="allCounts.do?threshold=2" target="_self"><h4>View All Interests</h4>
-</html:link>
-<% } %>
---%>
-
 <br><br>
 <form name=tickform>
 <textarea name=tickfield rows=4 cols=70 style="background-color: rgb(0,85,102); color: rgb(255,255,255); cursor: default; font-family: Arial; font-size: 16px;" wrap=virtual></textarea>

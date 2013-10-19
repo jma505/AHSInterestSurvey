@@ -23,6 +23,7 @@ public final class User implements Serializable {
 	private boolean is_validated;
 
 	private boolean isStudent;
+	private boolean isK12;
 
 	public User() {
 		username = "";
@@ -31,6 +32,7 @@ public final class User implements Serializable {
 		is_validated = false;
 		//user_teacher = 0;
 		isStudent = false;
+		isK12 = false;
 	}
 
 	public void setUsername(String s) {
@@ -90,6 +92,10 @@ public final class User implements Serializable {
 	public boolean isStudent() {
 		return isStudent;
 	}
+	
+	public boolean isK12() {
+		return isK12;
+	}
 
 	public boolean validate(DataSource ds, ResourceBundle rb) throws Exception {
 
@@ -100,6 +106,13 @@ public final class User implements Serializable {
 				if (rb.getString("student.entry.password").equalsIgnoreCase(
 						password)) {
 					isStudent = true;
+					is_validated = true;
+					return true;
+				}
+			}
+			else if (rb.getString("k12student.entry.name").equalsIgnoreCase(username)) {
+				if (rb.getString("student.entry.password").equalsIgnoreCase(password)) {
+					isK12 = true;
 					is_validated = true;
 					return true;
 				}

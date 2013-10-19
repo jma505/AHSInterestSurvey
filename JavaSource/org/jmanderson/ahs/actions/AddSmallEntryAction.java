@@ -38,6 +38,8 @@ public final class AddSmallEntryAction extends Action {
 
 	private static final String GLOBAL_FORWARD_login = "login";
 
+	public static final String GLOBAL_FORWARD_logoff = "logoff";
+
 	private static final String GLOBAL_FORWARD_exception = "exception";
 
 	private static final String FORWARD_success = "success";
@@ -79,6 +81,9 @@ public final class AddSmallEntryAction extends Action {
 			}
 			if (mapping.getAttribute() != null)
 				session.removeAttribute(mapping.getAttribute());
+			if (user.isK12()) {
+				return mapping.findForward(GLOBAL_FORWARD_logoff);
+			}
 			return (mapping.findForward(FORWARD_cancel));
 		}
 

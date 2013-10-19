@@ -47,6 +47,7 @@
   <action input="/pages/login.jsp" name="loginForm" path="/processLogin"
    scope="request" type="org.jmanderson.ahs.actions.LoginAction" validate="true">
    <forward name="successStudent" path="/addBigEntry.do?newstudent=yes"/>
+   <forward name="successK12" path="/addSmallEntry.do?newstudent=yes"/>
    <forward name="success" path="teacher.main.page"/>
   </action>
   

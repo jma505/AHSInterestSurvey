@@ -33,6 +33,8 @@ public class LoginAction extends org.apache.struts.action.Action {
 	public static final String FORWARD_success = "success";
 
 	public static final String FORWARD_successStudent = "successStudent";
+	
+	public static final String FORWARD_successK12 = "successK12";
 
 	public LoginAction() {
 	}
@@ -68,7 +70,9 @@ public class LoginAction extends org.apache.struts.action.Action {
 
 		if (user != null && user.isStudent()) {
 			return mapping.findForward(FORWARD_successStudent);
-		} else {
+		} else if (user.isK12()) { 
+			return mapping.findForward(FORWARD_successK12); }
+		else {
 			return mapping.findForward(FORWARD_success);
 		}
 	}

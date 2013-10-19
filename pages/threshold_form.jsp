@@ -30,20 +30,20 @@
   String minority = (String) request.getAttribute("minority");
   if (minority == null)
     minority = "both";
-  out.print("<input type=\"radio\" name=\"minority\" value=\"yes\" onclick=\"document.forms[0].submit()\"");
+  out.print("<input type=\"radio\" style=\"display:none;\" name=\"minority\" value=\"yes\" onclick=\"document.forms[0].submit()\"");
   if (minority.equals("yes"))
-    out.print(" checked><font size=\"+1\" color=\"red\">Minorities Only</font>  ");
+    out.print(" checked><font size=\"+1\" color=\"red\"></font>  ");
   else 
-    out.println(">Minorities Only  ");
-  out.print("<input type=\"radio\" name=\"minority\" value=\"no\" onclick=\"document.forms[0].submit()\"");
+    out.println(">");
+  out.print("<input type=\"radio\" style=\"display:none;\" name=\"minority\" value=\"no\" onclick=\"document.forms[0].submit()\"");
   if (minority.equals("no"))
-    out.print(" checked><font size=\"+1\" color=\"red\">Non-Minorities Only</font>  ");
+    out.print(" checked><font size=\"+1\" color=\"red\"></font>  ");
   else
-    out.println(">Non-Minorities Only  ");
-  out.print("<input type=\"radio\" name=\"minority\" value=\"both\" onclick=\"document.forms[0].submit()\"");
+    out.println(">");
+  out.print("<input type=\"radio\" style=\"display:none;\" name=\"minority\" value=\"both\" onclick=\"document.forms[0].submit()\"");
   if (minority.equals("both"))
     out.print(" checked");
-  out.println(">Both<br>");
+  out.println("><br>");
 %>
 
 </h4>

@@ -101,7 +101,7 @@ public class PrepareSession {
 				for (int i = 0; i < teachersV.size(); i++) {
 					tb = (TeacherBean) teachersV.get(i);
 					list.add(new TeacherListBean(tb.getLastname() + " (grade "
-							+ tb.getGrade() + ")", tb.getId()));
+							+ formatGrade(tb.getGrade()) + ")", tb.getId()));
 				}
 			} catch (Exception e) {
 				throw new AppException("Error creating the Teacher list", e);
@@ -190,7 +190,7 @@ public class PrepareSession {
 					if (tb.getGrade() >= grade)
 						listB
 								.add(new TeacherListBean(tb.getLastname()
-										+ " (grade " + tb.getGrade() + ")", tb
+										+ " (grade " + formatGrade(tb.getGrade()) + ")", tb
 										.getId()));
 				}
 			} catch (Exception e) {
@@ -225,7 +225,7 @@ public class PrepareSession {
 					if (tb.getGrade() < grade)
 						listS
 								.add(new TeacherListBean(tb.getLastname()
-										+ " (grade " + tb.getGrade() + ")", tb
+										+ " (grade " + formatGrade(tb.getGrade()) + ")", tb
 										.getId()));
 				}
 			} catch (Exception e) {
@@ -235,4 +235,13 @@ public class PrepareSession {
 		}
 	}
 
+	private static String formatGrade(int grade) {
+		String sGrade = Integer.toString(grade);
+		if (grade < 10) {
+			return sGrade;
+		}
+		StringBuffer sb = new StringBuffer();
+		sb.append(sGrade.charAt(0)).append("-").append(sGrade.charAt(1));
+		return sb.toString();
+	}
 }

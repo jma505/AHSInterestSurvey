@@ -14,7 +14,7 @@ function openwin(win, winname) {
 <span title="Return to the Application's Home Page">
 <html:link action="/homepage.do">Home Page</html:link></span><br>
 <hr>
-Edit Names and Minorities<br>
+Edit Names<br>
 <hr>
 <span title="Choose a Teacher's Class to View">
 <html:link action="/chooseTeacher.do">Choose a Teacher's Class</html:link></span><br>

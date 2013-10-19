@@ -19,6 +19,18 @@ public final class User implements Serializable {
 	private String password;
 
 	private int user_security_level;
+	
+	/*
+	 * 0 = unknown (default ... can do nothing but logoff)
+	 * 1 = teacher (view)
+	 * 2 = teacher (view with ability to edit names)
+	 * 3 = data entry (put in data from the K-2 short form)
+	 * 4 = administrator (view all)
+	 * 5 = super administrator (access to everything, including data entry)
+	 * 
+	 * "student" login - access upper grades long entry form
+	 * "k12" login - access lower grades short entry form
+	 */
 
 	private boolean is_validated;
 

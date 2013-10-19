@@ -15,9 +15,9 @@ function openwin(win, winname) {
 <html:link action="/homepage.do">Home Page</html:link></span><br>
 <hr>
 <% if (user.isEditor()) { %>
-<span title="Edit Student Names and Minority Status">
+<span title="Edit Student Names">
 <% String action = "/prepareEdit.do?teacherID=" + request.getAttribute("teacherId"); %>
-<html:link action="<%=action%>">Edit Names and Minorities</html:link></span><br>
+<html:link action="<%=action%>">Edit Names</html:link></span><br>
 <hr>
 <% } %>
 Choose a Teacher's Class<br>

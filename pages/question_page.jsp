@@ -6,7 +6,7 @@
   <logic:present name="questionPageListBig">
   <html:select property="jumpPageNumber" size="1">
   <html:options collection="questionPageListBig" labelProperty="label" property="value"/>
-  </html:select>&nbsp;&nbsp;&nbsp;<html:submit property="jump" value="jump" onclick="javascript:document.forms[0].submit()">Go</html:submit><br>
+  </html:select>&nbsp;&nbsp;&nbsp;<html:submit property="jump">Go</html:submit><br>
   </logic:present>
 </logic:equal>
 

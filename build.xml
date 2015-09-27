@@ -1,4 +1,4 @@
-<project name="empty" basedir="/Users/johnmanderson/Workspaces/MyEclipse 9/ahs" default="war">
+<project name="empty" basedir="/Users/johnmanderson/Workspaces/MyEclipse 2015/ahs" default="war">
 
     <property name="webroot.dir" value="${basedir}"/>
     <property name="webinf.dir" value="${webroot.dir}/WEB-INF"/>

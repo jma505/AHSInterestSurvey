@@ -10,7 +10,7 @@ package org.jmanderson.ahs.dataobjects;
 public interface CategoryCounts2 {
 
 	static final int ANIMALS = 4;
-	static final int ATHLETICS = 2;
+	static final int ATHLETICS = 7;
 	static final int CHILDCARE = 1;
 	static final int CLOTHING = 1;
 	static final int CONSTRUCTING = 1;
@@ -24,7 +24,7 @@ public interface CategoryCounts2 {
 	static final int FOREIGNLANGUAGE = 2;
 	static final int LAW = 2;
 	static final int SCHOOLSUBJECTS = 8;
-	static final int MEDIA = 31;
+	static final int MEDIA = 32;
 	static final int MEDICINE = 1;
 	static final int MUSIC = 10;
 	static final int NATURE = 2;

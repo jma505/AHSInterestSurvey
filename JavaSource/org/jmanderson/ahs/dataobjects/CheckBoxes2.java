@@ -176,6 +176,16 @@ public class CheckBoxes2 extends CheckBoxes implements Serializable, CategoryCou
 			at2[0] = true;
 		if (f.getAt201())
 			at2[1] = true;
+		if (f.getAt202())
+			at2[2] = true;
+		if (f.getAt203())
+			at2[3] = true;
+		if (f.getAt204())
+			at2[4] = true;
+		if (f.getAt205())
+			at2[5] = true;
+		if (f.getAt206())
+			at2[6] = true;
 
 		if (f.getCh200())
 			ch2[0] = true;
@@ -481,6 +491,11 @@ public class CheckBoxes2 extends CheckBoxes implements Serializable, CategoryCou
 		
 		f.setAt200(at2[0]);
 		f.setAt201(at2[1]);
+		f.setAt202(at2[2]);
+		f.setAt203(at2[3]);
+		f.setAt204(at2[4]);
+		f.setAt205(at2[5]);
+		f.setAt206(at2[6]);
 		
 		f.setCh200(ch2[0]);
 		
@@ -552,7 +567,7 @@ public class CheckBoxes2 extends CheckBoxes implements Serializable, CategoryCou
 		f.setMe228(me2[28]);
 		f.setMe229(me2[29]);
 		f.setMe230(me2[30]);
-		//f.setMe231(me2[31]);
+		f.setMe231(me2[31]);
 		
 		f.setMd200(md2[0]);
 		

@@ -5,6 +5,11 @@
 
 <html:base/>
 <link rel="stylesheet" href="CSS/style1.css" type="text/css">
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/data.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
 
 <br>
 <center>
@@ -12,13 +17,13 @@
 
 <%@ include file="/pages/threshold_form.jsp" %>
 
-<div class="boxcolor">
-<table align="center" border="0" cellspacing="5" cellpadding="1">
-<tr>
-  <th align="left"><big>Interest</big></th>
+<div id='container' class="boxcolor" style="min-width: 310px; height: 100px; margin: 0 auto"></div>
+<div>
+<table id='datatable' border="0" cellspacing="5" cellpadding="1" style="position: absolute; left: -9999em">
+<thead><tr>
   <th></th>
-  <th align="left" colspan="3"><big>Count</big></th>
-</tr>
+  <th>Percentage of Class</th>
+</tr></thead><tbody>
 <%
   int total = Integer.parseInt((String) request.getAttribute("count"));
   java.util.Vector v = (java.util.Vector) request.getAttribute("interests");
@@ -26,28 +31,45 @@
     org.jmanderson.ahs.dataobjects.InterestBean interest = (org.jmanderson.ahs.dataobjects.InterestBean) v.get(i);
     request.setAttribute("interest", interest);
 %>
-<tr><td valign="top">
+<tr><td>
+
 <%= interest.getInterestName() %>
-</td><td></td><td>
-<%= interest.getCount() %>
-</td><td>
-<%
-  out.println("(" + (interest.getCount() * 100) / total + "%)");
-%>
-</td><td>
-<%
-  out.print("    ");
-  for (int j = 0; j < interest.getCount(); j++)
-    out.print("*");
+</td><td><%
+  out.println((interest.getCount() * 100) / total);
 %>
 </td></tr>
 <%
   }
 %>
-</table>
+</tbody></table>
 </div>
 <br>
 <h4><html:link action="/chooseTeacher.do">Choose another Teacher</html:link></h4>
 </center>
-
+<script>
+$(function () {
+	$('#container').css('height',200+(($('#datatable > tbody > tr').length)*40));
+    $('#container').highcharts({
+        data: {
+            table: 'datatable'
+        },
+        chart: {
+            type: 'bar'
+        },
+        title: {
+        	text: 'Percentage of Students by Interest'
+        },
+        yAxis: {
+            title: {
+                text: ''
+            },
+            min: 0,
+            max: 100
+        },
+        xAxis: {
+            type: 'category'
+        }
+    });
+});
+</script>
 

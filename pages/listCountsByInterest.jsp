@@ -9,6 +9,10 @@
 <title>Entire School Listing (Interests)</title>
 <html:base/>
 <link rel="stylesheet" href="CSS/style1.css" type="text/css">
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/data.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
 </head>
 <body>
 <br>
@@ -17,13 +21,13 @@
 
 <%@ include file="/pages/threshold_form2.jsp" %>
 
-<div class="boxcolor">
-<table align="center" border="0" cellspacing="5" cellpadding="1">
-<tr>
-  <th align="left"><big>Interest</big></th>
+<div id='container' class="boxcolor" style="min-width: 310px; height: 100px; margin: 0 auto"></div>
+<div>
+<table id='datatable' border="0" cellspacing="5" cellpadding="1" align="center">
+<thead><tr>
   <th></th>
-  <th align="left" colspan="3"><big>Count</big></th>
-</tr>
+  <th>Percentage of Students</th>
+</tr></thead><tbody>
 <%
   int total = Integer.parseInt((String) request.getAttribute("count"));
   java.util.Vector v = (java.util.Vector) request.getAttribute("interests");
@@ -45,25 +49,44 @@
 %>
 <%= interest.getInterestName() %>
 </a>
-</td><td></td><td>
-<%= interest.getCount() %>
 </td><td>
 <%
-  out.println("(" + (interest.getCount() * 100) / total + "%)");
-%>
-</td><td>
-<%
-  out.print("    ");
-  for (int j = 0; j <= interest.getCount()/5; j++)
-    out.print("*");
+  out.println((interest.getCount() * 100) / total);
 %>
 </td></tr>
 <%
   }
 %>
-</table>
+</tbody></table>
 </div>
 </center>
+<script>
+$(function () {
+	$('#container').css('height',200+(($('#datatable > tbody > tr').length)*40));
+    $('#container').highcharts({
+        data: {
+            table: 'datatable'
+        },
+        chart: {
+            type: 'bar'
+        },
+        title: {
+        	text: 'Percentage of Students by Interest'
+        },
+        yAxis: {
+            title: {
+                text: ''
+            },
+            min: 0,
+            max: 100
+        },
+        xAxis: {
+            type: 'category'
+        }
+    });
+});
+</script>
+
 
 </body>
 </html:html>
